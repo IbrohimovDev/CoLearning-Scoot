@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp with TailwindCSS</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="relative h-full pt-0">
+        <header class="relative z-40 pb-[77px] md:pb-0">
+            <nav class="main-container fixed bg-white md:relative flex-row justify-between items-center py-6 z-40">
+                <div
+                    class="flex flex-col md:hidden w-4/5 min-h-screen fixed top-[77px] left-[-100%] justify-center items-center bg-[#333A44] z-50 duration-300 mobile-menu">
+                    <ul class="flex flex-col min-h-full mb-10 select-none mobile_menu">
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">About</a></li>
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Locations</a></li>
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Careers</a></li>
+                    </ul>
+                    <button>Get Scootin</button>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div
+                        class="relative left-0 sm:left-1/2 flex items-center gap-[14px] justify-start sm:translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                        <img src="./img/logo.svg" alt="logo img and StartupLanding txt">
+                    </div>
+                    <div class="w-[249px] hidden md:block ml-[58px]">
+                        <ul class="flex justify-between select-none">
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">Location</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="hidden md:block">Register now</button>
+                <div
+                    class="mobile-burger block md:hidden relative z-50 right-0 w-6 h-6 bg-cover bg-no-repeat bg-center">
+                </div>
+            </nav>
+        </header>
+        <main class="flex items-end justify-end relative pb-[152px] min-h-[200px]">
+            <div class="main-bg bg-[rgba(47,59,89,0.75)] z-30"></div>
+            <div class="main-bg bg-location z-20"></div>
+            <div class="absolute top-1/2 -translate-y-1/2 z-30 flex items-center justify-between w-[90%] lg:w-[80%]">
+                <h1>Location</h1>
+                <div class="flex justify-end relative left-0 w-1/3">
+                    <img src="./img/three-circle.png" alt="">
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="py-0">
+        <div class="main-container relative" style="width:100%;height:600px" id="map">
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.uz/maps?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Yandex Maps
+                </a>
+                <a href="https://yandex.uz/maps/?ll=71.958686%2C42.659645&utm_medium=mapframe&utm_source=maps&z=2.6"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex Maps
+                </a>
+                <iframe src="https://yandex.uz/map-widget/v1/-/CCUJIOV8dB" style="width:100%;height:542px"
+                    frameborder="1" allowfullscreen="true" style="position:relative;">
+                </iframe>
+            </div>
+            <div class="absolute top-[33%] left-[13%] w-[10%] h-auto">
+                <img class="hidden sm:block" src="./img/ny.png" alt="">
+                <div class="block sm:hidden w-4 h-4 rounded-full bg-[#FCB72B]"></div>
+            </div>
+            <div class="absolute top-1/2 left-[52%] w-[10%] h-auto">
+                <img class="hidden sm:block" src="./img/in.png" alt="">
+                <div class="block sm:hidden w-4 h-4 rounded-full bg-[#FCB72B]"></div>
+            </div>
+            <div class="absolute right-[32%] top-[38%] w-[10%] h-auto">
+                <img class="hidden sm:block" src="./img/jp.png" alt="">
+                <div class="block sm:hidden w-4 h-4 rounded-full bg-[#FCB72B]"></div>
+            </div>
+            <div class="absolute top-[27%] left-[28.5%] w-[10%] h-auto">
+                <img class="hidden sm:block" src="./img/ln.png" alt="">
+                <div class="block sm:hidden w-4 h-4 rounded-full bg-[#FCB72B]"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block sm:hidden">
+        <div class="main-container">
+            <div class="mb-4 py-[22px] flex flex-col items-center bg-[#FCB72B26]">
+                <h4>New York</h4>
+            </div>
+            <div class="mb-4 py-[22px] flex flex-col items-center bg-[#FCB72B26]">
+                <h4>London</h4>
+            </div>
+            <div class="mb-4 py-[22px] flex flex-col items-center bg-[#FCB72B26]">
+                <h4>Jakarta</h4>
+            </div>
+            <div class="mb-4 py-[22px] flex flex-col items-center bg-[#FCB72B26]">
+                <h4>Yokohama</h4>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-container items-center flex-col lg:flex-row gap-10 justify-between">
+            <h2 class="max-w-[351px] text-center lg:text-left">Your city not listed?</h2>
+            <p class="main-paragraph max-w-[445px] px-10 lg:px-0 text-center lg:text-left">If you’d like to see Scoot in your hometown, be sure to let us know. We track
+                requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us
+                on social.</p>
+            <div class="flex items-center justify-center">
+                <button>Message Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="relative flex items-center justify-center bg-[#495567] min-h-[300px]">
+            <div class="main-container relative z-30 md:flex-row">
+                <h2 class="text-white max-w-[415px]">Sign up and Scoot off today</h2>
+                <div class="flex items-center gap-[18px]">
+                    <div>
+                        <a href="#">
+                            <img src="./img/app-store.png" alt="app store">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./img/google-play.png" alt="google play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 z-10">
+                <img src="./img/footer-circle.svg" alt="">
+            </div>
+        </div>
+        <div class="bg-[#333A44] min-h-[96px] flex items-center justify-center">
+            <div class="main-container md:flex-row">
+                <div class="flex items-center gap-[58px]">
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img src="./img/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="w-[249px] hidden md:block ml-[58px]">
+                        <ul class="flex justify-between select-none">
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">Location</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-center justify-evenly min-w-[120px]">
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/facebook.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/twitter.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/insta.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=23bf692a-e7d3-4fbc-98cb-c9a7d5fabfcf&lang=en_US"
+        type="text/javascript"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>

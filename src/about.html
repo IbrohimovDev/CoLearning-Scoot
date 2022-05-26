@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp with TailwindCSS</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="relative h-full pt-0">
+        <header class="relative z-40 pb-[77px] md:pb-0">
+            <nav class="main-container fixed bg-white md:relative flex-row justify-between items-center py-6 z-40">
+                <div
+                    class="flex flex-col md:hidden w-4/5 top-[77px] min-h-screen fixed left-[-100%] justify-center items-center bg-[#333A44] z-50 duration-300 mobile-menu">
+                    <ul class="flex flex-col min-h-full mb-10 select-none mobile_menu">
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" target="_blank" href="#">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" target="_blank" href="location.html">Location</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link underline-animation" target="_blank" href="careers.html">Careers</a>
+                        </li>
+                    </ul>
+                    <button>Get Scootin</button>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div
+                        class="relative left-0 sm:left-1/2 flex items-center gap-[14px] justify-start sm:translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                        <a href="index.html" target="_blank">
+                            <img src="./img/logo.svg" alt="logo img and StartupLanding txt">
+                        </a>
+                    </div>
+                    <div class="w-[249px] hidden md:block ml-[58px]">
+                        <ul class="flex justify-between select-none mobile_menu">
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank" href="#">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="location.html">Location</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="careers.html">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="hidden md:block">Register now</button>
+                <div
+                    class="mobile-burger block md:hidden relative z-50 right-0 w-6 h-6 bg-cover bg-no-repeat bg-center">
+                </div>
+            </nav>
+        </header>
+        <main class="flex items-end justify-end relative pb-[152px] min-h-[200px]">
+            <div class="main-bg bg-[rgba(47,59,89,0.75)] z-30"></div>
+            <div class="main-bg bg-about z-20"></div>
+            <div class="absolute top-1/2 -translate-y-1/2 z-30 flex items-center justify-between w-[90%] lg:w-[80%]">
+                <h1>About</h1>
+                <div class="flex justify-end relative left-0 w-1/3">
+                    <img src="./img/three-circle.png" alt="">
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+    <section class="relative">
+        <div class="main-container">
+            <div class="flex flex-col-reverse items-center md:flex-row justify-between">
+                <div class="flex flex-col items-center md:items-start w-full md:w-1/2 sm:mr-10">
+                    <h2 class="max-w-[445px] text-center md:text-left">Mobility for the digital era</h2>
+                    <p class="main-paragraph text-center md:text-left max-w-[445px] mt-6 mb-10">Getting around should be
+                        simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to
+                        scooters at your fingertips.</p>
+                </div>
+                <div class="relative imgBefore flex items-end justify-end w-4/5 md:w-1/2 mb-14">
+                    <img class="rounded-full" src="./img/girl-phone-2.png" alt="">
+                </div>
+            </div>
+            <div class="absolute w-1/2 xl:w-auto bottom-[30%] right-0 z-30">
+                <img src="./img/arrow-1.1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="main-container">
+            <div class="flex flex-col items-center md:flex-row justify-between">
+                <div
+                    class="relative imgBefore after:-left-[105%] after:right-auto flex items-end justify-end w-4/5 md:w-1/2 mb-14">
+                    <img class="rounded-full" src="./img/bus.png" alt="">
+                </div>
+                <div class="flex flex-col items-center md:items-start w-full md:w-1/2 sm:ml-10">
+                    <h2 class="max-w-[445px] text-center md:text-left">Better urban living</h2>
+                    <p class="main-paragraph text-center md:text-left max-w-[445px] mt-6 mb-10">We’re helping connect
+                        cities and bring people closer together. Our scooters are also fully-electric and we offset the
+                        minimal carbon footprint for each ride.</p>
+                </div>
+            </div>
+            <div class="absolute w-1/2 xl:w-auto top-[15%] left-0 z-30">
+                <img src="./img/arrow-2.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="text-center mb-[103px]">Our values</h2>
+        <div class="main-container">
+            <div class="our-values">
+                <div class="our-values__box">
+                    <div class="our-values__imgBox">
+                        <img class="our-values__img" src="./img/hand-phone.png" alt="">
+                        <div class="our-values__order">
+                            <h4>01</h4>
+                        </div>
+                    </div>
+                    <h4 class="our-values__title">Our tech</h4>
+                    <p class="our-values__desc main-paragraph">We’re using cutting edge technology to drive accessible
+                        urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                </div>
+                <div class="our-values__box">
+                    <div class="our-values__imgBox">
+                        <img class="our-values__img" src="./img/driver.png" alt="">
+                        <div class="our-values__order">
+                            <h4>01</h4>
+                        </div>
+                    </div>
+                    <h4 class="our-values__title">Our tech</h4>
+                    <p class="our-values__desc main-paragraph">We’re using cutting edge technology to drive accessible
+                        urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                </div>
+                <div class="our-values__box">
+                    <div class="our-values__imgBox">
+                        <img class="our-values__img" src="./img/people.png" alt="">
+                        <div class="our-values__order">
+                            <h4>01</h4>
+                        </div>
+                    </div>
+                    <h4 class="our-values__title">Our tech</h4>
+                    <p class="our-values__desc main-paragraph">We’re using cutting edge technology to drive accessible
+                        urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="text-center mb-16">FAQs</h2>
+        <div class="main-container lg:flex-row mb-12">
+            <div class="w-full lg:w-1/3 mr-10 mb-10">
+                <h3 class="text-center lg:text-left">Safe driving</h3>
+            </div>
+            <div class="w-full lg:w-4/6 flex flex-col items-center justify-end">
+                <div class="accordion__contentBox active">
+                    <div class="accordion__label">
+                        <h4 class="accordion__title">Should I wear a helmet?</h4>
+                        <div class="imgBox">
+                            <img src="./img/chevron.svg" alt="chevron-right">
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="main-paragraph   text-left pb-8">To download the Scoot app, you can
+                            search “Scoot” in
+                            both the App and Google Play stores. An
+                            even simpler way to do it would be to click the relevant link at the bottom of this page
+                            and
+                            you’ll be re-directed to the correct page.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <h4 class="accordion__title">How about the rules & regulations?</h4>
+                        <div class="imgBox">
+                            <img src="./img/chevron.svg" alt="chevron">
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="main-paragraph   text-left pb-8">To download the Scoot app, you can
+                            search “Scoot” in
+                            both the App and Google Play stores. An
+                            even simpler way to do it would be to click the relevant link at the bottom of this page
+                            and
+                            you’ll be re-directed to the correct page.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <h4 class="accordion__title">What if I damage my Scoot?</h4>
+                        <div class="imgBox">
+                            <img src="./img/chevron.svg" alt="chevron">
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="main-paragraph   text-left pb-8">To download the Scoot app, you can
+                            search “Scoot” in
+                            both the App and Google Play stores. An
+                            even simpler way to do it would be to click the relevant link at the bottom of this page
+                            and
+                            you’ll be re-directed to the correct page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container lg:flex-row">
+            <div class="w-full lg:w-1/3 mr-10 mb-10">
+                <h3 class="text-center lg:text-left">How it works</h3>
+            </div>
+            <div class="w-full lg:w-4/6 flex flex-col items-center justify-end">
+                <div class="accordion__contentBox active">
+                    <div class="accordion__label">
+                        <h4 class="accordion__title">How do I download the
+                            App?</h4>
+                        <div class="imgBox">
+                            <img src="./img/chevron.svg" alt="chevron-right">
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="main-paragraph   text-left pb-8">To download the Scoot app, you can
+                            search “Scoot” in
+                            both the App and Google Play stores. An
+                            even simpler way to do it would be to click the relevant link at the bottom of this page
+                            and
+                            you’ll be re-directed to the correct page.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <h4 class="accordion__title">Can I find a nearby Scoots?</h4>
+                        <div class="imgBox">
+                            <img src="./img/chevron.svg" alt="chevron">
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="main-paragraph   text-left pb-8">To download the Scoot app, you can
+                            search “Scoot” in
+                            both the App and Google Play stores. An
+                            even simpler way to do it would be to click the relevant link at the bottom of this page
+                            and
+                            you’ll be re-directed to the correct page.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion__contentBox">
+                    <div class="accordion__label">
+                        <h4 class="accordion__title">Do I need a license to ride?</h4>
+                        <div class="imgBox">
+                            <img src="./img/chevron.svg" alt="chevron">
+                        </div>
+                    </div>
+                    <div class="accordion__content">
+                        <p class="main-paragraph   text-left pb-8">To download the Scoot app, you can
+                            search “Scoot” in
+                            both the App and Google Play stores. An
+                            even simpler way to do it would be to click the relevant link at the bottom of this page
+                            and
+                            you’ll be re-directed to the correct page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-wrapper">
+        <div class="relative flex items-center justify-center bg-[#495567] min-h-[300px]">
+            <div class="main-container items-center relative z-30 lg:flex-row">
+                <h2 class="footer-title text-center lg:text-left text-white mb-10 lg:mb-0 max-w-[415px]">Sign up and
+                    Scoot off today</h2>
+                <div class="flex items-center gap-[18px]">
+                    <div>
+                        <a href="#">
+                            <img src="./img/app-store.png" alt="app store">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./img/google-play.png" alt="google play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 z-10">
+                <img src="./img/footer-circle.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-nav bg-[#333A44] min-h-[96px] flex items-center justify-center">
+            <div class="main-container pt-16 pb-[94px] md:py-0 items-center md:flex-row">
+                <div class="flex flex-col md:flex-row items-center gap-[70px] md:gap-[58px]">
+                    <div>
+                        <a href="./index.html" target="_blank" class="no-underline">
+                            <img src="./img/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="w-[249px] mb-[87px] ml-0 md:mb-0 md:ml-[58px]">
+                        <ul class="flex flex-col items-center sm:flex-row justify-between select-none mobile_menu">
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" href="#">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="location.html">Location</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="careers.html">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-center justify-evenly w-[120px]">
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/facebook.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/twitter.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/insta.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>

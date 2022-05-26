@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp with TailwindCSS</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <section class="relative h-full pt-0">
+        <header class="relative z-50 pb-[77px] md:pb-0">
+            <nav class="main-container fixed bg-white md:relative flex-row justify-between items-center py-6 z-40">
+                <div class="flex flex-col md:hidden w-4/5 min-h-screen fixed top-[77px] left-[-100%] justify-center items-center bg-[#333A44] z-50 duration-300 mobile-menu">
+                    <ul class="flex flex-col min-h-full mb-10 select-none mobile_menu">
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">About</a></li>
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Locations</a></li>
+                        <li class="menu__item"><a class="menu__link underline-animation" href="#">Careers</a></li>
+                    </ul>
+                    <button>Get Scootin</button>
+                </div>
+                <div class="flex items-center justify-between">
+                    <div
+                        class="relative left-0 sm:left-1/2 flex items-center gap-[14px] justify-start sm:translate-x-[-50%] md:left-0 md:translate-x-0 z-50">
+                        <a href="#">
+                            <img src="./img/logo.svg" alt="logo img and StartupLanding txt">
+                        </a>
+                    </div>
+                    <div class="w-[249px] hidden md:block ml-[58px]">
+                        <ul class="flex justify-between select-none">
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank" href="about.html">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="location.html">Location</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="careers.html">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="hidden md:block">Register now</button>
+                <div
+                    class="mobile-burger block md:hidden relative z-50 right-0 w-6 h-6 bg-cover bg-no-repeat bg-center">
+                </div>
+            </nav>
+        </header>
+        <main class="relative pb-[152px] min-h-screen">
+            <div class="main-bg bg-[rgba(47,59,89,0.75)] z-30"></div>
+            <div class="main-bg bg-img z-20"></div>
+            <div class="absolute hidden md:block top-[70%] left-0 z-30">
+                <img src="./img/hero-line.svg" alt="">
+            </div>
+            <div class="absolute w-[446px] top-[75%] md:top-[70%] right-[60%] md:right-[20%] z-30">
+                <img src="./img/hero-arrow-right.svg" alt="">
+            </div>
+            <div class="absolute top-[85%] right-0 z-30">
+                <img src="./img/three-circle.svg" alt="">
+            </div>
+            <div class="main-container relative z-40 items-center md:items-start">
+                <h1 class="mt-[154px] mb-10 max-w-[500px] text-white text-center md:text-left">Scooter sharing made
+                    simple</h1>
+                <p class="lg:ml-[95px] mb-10 max-w-[405px] text-white text-center md:text-left">Scoot takes the hassle
+                    out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our
+                    app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+                <div class="flex items-center justify-center sm:justify-start">
+                    <button class="md:ml-[95px]">Get Scooting</button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="relative">
+        <div
+            class="absolute -top-16 md:top-[22%] left-[10.5%] hidden sm:block md:left-0 z-20 w-[15px] md:w-4/5 h-[650px] md:h-[15px] bg-[#E5ECF4] ">
+        </div>
+        <div class="main-container">
+            <div class="hero-wrapper flex flex-col md:flex-row">
+                <div class="hero-box">
+                    <div class="hero-imgBox">
+                        <img src="./img/icon-phone.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="hero-title">Locate with app</h4>
+                        <p class="hero-desc main-paragraph">Scoot takes the hassle out of urban mobility. Our bikes are
+                            placed in convenient locations in each of our cities. Use our app to locate the nearest
+                            bike, unlock it with a tap, and you’re away!</p>
+                    </div>
+                </div>
+                <div class="hero-box">
+                    <div class="hero-imgBox">
+                        <img src="./img/icon-scooter.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="hero-title">Pick your scooter</h4>
+                        <p class="hero-desc main-paragraph">Scoot takes the hassle out of urban mobility. Our bikes are
+                            placed in convenient locations in each of our cities. Use our app to locate the nearest
+                            bike, unlock it with a tap, and you’re away!</p>
+                    </div>
+                </div>
+                <div class="hero-box">
+                    <div class="hero-imgBox">
+                        <img src="./img/icon-scooter-fast.svg" alt="">
+                    </div>
+                    <div>
+                        <h4 class="hero-title">Enjoy your ride</h4>
+                        <p class="hero-desc main-paragraph">Scoot takes the hassle out of urban mobility. Our bikes are
+                            placed in convenient locations in each of our cities. Use our app to locate the nearest
+                            bike, unlock it with a tap, and you’re away!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="main-container">
+            <div class="flex flex-col-reverse items-center md:flex-row justify-between">
+                <div class="flex flex-col items-center md:items-start w-full md:w-1/2 sm:mr-10">
+                    <h2 class="max-w-[445px] text-center md:text-left">Easy to use riding telemetry</h2>
+                    <p class="main-paragraph text-center md:text-left max-w-[445px] mt-6 mb-10">The Scoot app is available with riding telemetry.
+                        This means it can show you your average speed, how long you've been using the scooter, your
+                        traveling distance, and many more things all in an easy to use app.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="relative imgBefore flex items-end justify-end w-4/5 md:w-1/2 mb-14">
+                    <img src="./img/girl-phone.png" alt="">
+                </div>
+            </div>
+            <div class="absolute w-1/2 lg:w-auto bottom-[60%] md:bottom-[15%] right-0 z-30">
+                <img src="./img/arrow-1.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="main-container">
+            <div class="flex flex-col items-center md:flex-row justify-between">
+                <div class="relative imgBefore after:-left-[105%] after:right-auto flex items-end justify-end w-4/5 md:w-1/2 mb-14">
+                    <img src="./img/city.png" alt="">
+                </div>
+                <div class="flex flex-col items-center md:items-start w-full md:w-1/2 sm:ml-10">
+                    <h2 class="max-w-[445px] text-center md:text-left">Easy to use riding telemetry</h2>
+                    <p class="main-paragraph text-center md:text-left max-w-[445px] mt-6 mb-10">The Scoot app is available with riding telemetry.
+                        This means it can show you your average speed, how long you've been using the scooter, your
+                        traveling distance, and many more things all in an easy to use app.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="absolute w-1/2 lg:w-auto top-[15%] left-0 z-30">
+                <img src="./img/arrow-2.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="relative">
+        <div class="main-container">
+            <div class="flex flex-col-reverse items-center md:flex-row justify-between">
+                <div class="flex flex-col items-center md:items-start w-full md:w-1/2 sm:mr-10">
+                    <h2 class="max-w-[445px] text-center md:text-left">Easy to use riding telemetry</h2>
+                    <p class="main-paragraph text-center md:text-left max-w-[445px] mt-6 mb-10">The Scoot app is available with riding telemetry.
+                        This means it can show you your average speed, how long you've been using the scooter, your
+                        traveling distance, and many more things all in an easy to use app.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="relative imgBefore flex items-end justify-end w-4/5 md:w-1/2 mb-14">
+                    <img class="rounded-full" src="./img/pocket.png" alt="">
+                </div>
+            </div>
+            <div class="absolute flex flex-col items-end w-1/2 lg:w-auto top-[20%] right-0 z-30">
+                <img src="./img/arrow-3.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-wrapper">
+        <div class="relative flex items-center justify-center bg-[#495567] min-h-[300px]">
+            <div class="main-container items-center relative z-30 lg:flex-row">
+                <h2 class="footer-title text-center lg:text-left text-white mb-10 lg:mb-0 max-w-[415px]">Sign up and
+                    Scoot off today</h2>
+                <div class="flex items-center gap-[18px]">
+                    <div>
+                        <a href="#">
+                            <img src="./img/app-store.png" alt="app store">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./img/google-play.png" alt="google play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 right-0 z-10">
+                <img src="./img/footer-circle.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-nav bg-[#333A44] min-h-[96px] flex items-center justify-center">
+            <div class="main-container pt-16 pb-[94px] md:py-0 items-center md:flex-row">
+                <div class="flex flex-col md:flex-row items-center gap-[70px] md:gap-[58px]">
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img src="./img/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="w-[249px] mb-[87px] ml-0 md:mb-0 md:ml-[58px]">
+                        <ul class="flex flex-col items-center sm:flex-row justify-between select-none mobile_menu">
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank" href="about.html">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="location.html">Location</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link underline-animation" target="_blank"
+                                    href="careers.html">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex items-center justify-evenly w-[120px]">
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/facebook.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/twitter.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="no-underline">
+                            <img class="hover:grayscale hover:opacity-90 duration-300 cursor-pointer"
+                                src="./img/insta.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My.js -->
+    <script src="./js/scripts.js"></script>
+
+
+</body>
+
+</html>
